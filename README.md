@@ -1,3 +1,3 @@
 # SoMaSLAM
 
-This is the homepage for somaslam
+This is the homepage for somaslam (changed)
