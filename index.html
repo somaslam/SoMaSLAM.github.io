@@ -88,33 +88,27 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SoMaSLAM: 2D Graph SLAM for Sparse Range Sensing with Soft Manhattan World Constraints</h1>
+          <h1 class="title is-2 publication-title">SoMaSLAM: 2D Graph SLAM for Sparse Range Sensing with Soft Manhattan World Constraints</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              (<!--<a href="https://keunhong.com">-->)
               Jeahn Han</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              Zichao Hu</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              Seonmo Yang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              Minji Kim</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              Pyojin Kim</a><sup>1</sup>,
+            
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>Gwangju Institute of Science and Technology,</span>
+            <span class="author-block"><sup>2</sup>University of Texas at Austin</span>
           </div>
 
           <div class="column has-text-centered">
@@ -259,31 +253,30 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            We propose a graph SLAM algorithm for sparse range sensing that incorporates a soft Manhattan world utilizing landmark-landmark constraints.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            Sparse range sensing is
+            necessary for tiny robots that do not have the luxury of using
+            heavy and expensive sensors. Existing SLAM methods dealing
+            with sparse range sensing lack accuracy and accumulate drift
+            error over time due to limited access to data points. Algorithms
+            that cover this flaw using structural regularities, such as the
+            Manhattan world (MW), have shortcomings when mapping
+            real-world environments that do not coincide with the rules.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            We propose SoMaSLAM, a 2D graph SLAM designed for tiny
+            robots with sparse range sensing. Our approach effectively
+            maps sparse range data without enforcing strict structural
+            regularities and maintains an adaptive graph. We implement
+            the MW assumption as soft constraints, which we refer to
+            as a soft Manhattan world. We propose novel soft landmark-landmark
+            constraints to incorporate the soft MW into graph
+            SLAM. Through extensive evaluation, we demonstrate that our
+            proposed SoMaSLAM method improves localization accuracy
+            on diverse datasets and is flexible enough to be used in the real
+            world.
           </p>
         </div>
       </div>
