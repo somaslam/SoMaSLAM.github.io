@@ -8,7 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SoMaSLAM: 2D Graph SLAM for Sparse Range Sensing with Soft Manhattan World Constraints</title>
 
- 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
 
   <!-- Use only Helvetica -->
   <style>
@@ -20,6 +32,13 @@
     .content-column {
       max-width: 75%;
       margin: 0 auto;
+    }
+
+    /* Ensure title has the same width as other elements */
+    .title-column {
+      max-width: 75%;
+      margin: 0 auto;
+      text-align: center;
     }
 
     /* Center images, GIFs, and videos, ensuring consistent width */
@@ -41,6 +60,20 @@
       width: 100%;
       height: 100%;
     }
+
+    /* Add spacing between sections */
+    .section-spacing {
+      margin-top: 2rem;  /* Add extra space between sections */
+    }
+
+    /* Increase spacing between title, names, and links */
+    .title-spacing {
+      margin-bottom: 1.5rem;  /* Add more space after title */
+    }
+
+    .author-spacing {
+      margin-bottom: 1.5rem;  /* Add space after author names */
+    }
   </style>
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -61,10 +94,12 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
-        <!-- Make the title width consistent with other elements -->
-        <div class="column has-text-centered content-column">
+        <!-- Title section with increased bottom spacing and matching width -->
+        <div class="column has-text-centered title-column title-spacing">
           <h1 class="title is-2 publication-title">SoMaSLAM: 2D Graph SLAM for Sparse Range Sensing with Soft Manhattan World Constraints</h1>
-          <div class="is-size-5 publication-authors">
+
+          <!-- Increase space between title and author names -->
+          <div class="is-size-5 publication-authors author-spacing">
             <span class="author-block">
               Jeahn Han</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -85,7 +120,8 @@
             <span class="author-block"><sup>2</sup>University of Texas at Austin</span>
           </div>
 
-          <div class="publication-links">
+          <!-- Add space between author names and links to buttons -->
+          <div class="publication-links section-spacing">
             <!-- PDF Link. -->
             <span class="link-block">
               <a href="https://arxiv.org/pdf/2409.15736"
@@ -141,7 +177,7 @@
   </div>
 </section>
 
-<section class="hero teaser" style="margin-bottom: 0; padding-bottom: 0;">
+<section class="hero teaser section-spacing" style="margin-bottom: 0; padding-bottom: 0;">
   <div class="container is-max-desktop content-column">
     <div class="hero-body has-text-centered">
       <img src="./static/videos/front-vid3-gif.gif" 
@@ -155,7 +191,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section-spacing">
   <div class="container is-max-desktop content-column">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -177,7 +213,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered section-spacing">
       <div class="column">
         <h2 class="title is-3">Supplementary video (with sound)</h2>
         <div class="publication-video video-wrapper">
@@ -190,7 +226,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section-spacing">
   <div class="container is-max-desktop content-column">
     <!-- Short clips section -->
     <h2 class="title is-3">Short clips</h2>
@@ -228,7 +264,7 @@
   </div>
 </section>
 
-<section class="section" id="BibTeX">
+<section class="section section-spacing" id="BibTeX">
   <div class="container is-max-desktop content-column">
     <h2 class="title">BibTeX</h2>
     <pre><code>
@@ -237,7 +273,7 @@
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer section-spacing">
   <div class="container content-column">
     <div class="content has-text-centered">
     </div>
