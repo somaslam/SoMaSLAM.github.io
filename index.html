@@ -22,16 +22,29 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <!-- Use only Helvetica -->
+  <style>
+    body, h1, h2, h3, p, span {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    /* Ensure consistent alignment and width */
+    .content-column {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+
+    /* Center images and videos */
+    .content-column img, .content-column iframe {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/kor_flag_center.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -46,7 +59,7 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
-        <div class="column has-text-centered">
+        <div class="column has-text-centered content-column">
           <h1 class="title is-2 publication-title">SoMaSLAM: 2D Graph SLAM for Sparse Range Sensing with Soft Manhattan World Constraints</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -61,7 +74,6 @@
             </span>
             <span class="author-block">
               Pyojin Kim</a><sup>1</sup>
-
             </span>
           </div>
 
@@ -70,58 +82,55 @@
             <span class="author-block"><sup>2</sup>University of Texas at Austin</span>
           </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2409.15736"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2409.15736"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://youtu.be/mroBQkx6ew0"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="__"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="__"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-            </div>
-
+          <div class="publication-links">
+            <!-- PDF Link. -->
+            <span class="link-block">
+              <a href="https://arxiv.org/pdf/2409.15736"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2409.15736"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+            <!-- Video Link. -->
+            <span class="link-block">
+              <a href="https://youtu.be/mroBQkx6ew0"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+            </span>
+            <!-- Code Link. -->
+            <span class="link-block">
+              <a href="__"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+            <!-- Dataset Link. -->
+            <span class="link-block">
+              <a href="__"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="far fa-images"></i>
+                </span>
+                <span>Data</span>
+              </a>
           </div>
         </div>
       </div>
@@ -130,13 +139,11 @@
 </section>
 
 <section class="hero teaser" style="margin-bottom: 0; padding-bottom: 0;">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop content-column">
     <div class="hero-body has-text-centered">
       <img src="./static/videos/front-vid3-gif.gif" 
-           alt="mit killian 11pts pose comparison GIF" 
-           style="width:75%">
+           alt="mit killian 11pts pose comparison GIF">
       <div class="content has-text-justified">
-        <!--<h3 class="title is-4">Pose Error Accumulation</h3>--> <!-- Matching font size and style -->
         <p>
           SoMaSLAM decreases pose error accumulation by using its unique constraints, sometimes achieving pose results close to the ground truth without loop closures.
         </p>
@@ -146,37 +153,20 @@
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop content-column">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths" style="width: 75%;">
+      <div class="column">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             We propose a graph SLAM algorithm for sparse range sensing that incorporates a soft Manhattan world utilizing landmark-landmark constraints.
           </p>
           <p>
-            Sparse range sensing is
-            necessary for tiny robots that do not have the luxury of using
-            heavy and expensive sensors. Existing SLAM methods dealing
-            with sparse range sensing lack accuracy and accumulate drift
-            error over time due to limited access to data points. Algorithms
-            that cover this flaw using structural regularities, such as the
-            Manhattan world (MW), have shortcomings when mapping
-            real-world environments that do not coincide with the rules.
+            Sparse range sensing is necessary for tiny robots that do not have the luxury of using heavy and expensive sensors. Existing SLAM methods dealing with sparse range sensing lack accuracy and accumulate drift error over time due to limited access to data points. Algorithms that cover this flaw using structural regularities, such as the Manhattan world (MW), have shortcomings when mapping real-world environments that do not coincide with the rules.
           </p>
           <p>
-            We propose SoMaSLAM, a 2D graph SLAM designed for tiny
-            robots with sparse range sensing. Our approach effectively
-            maps sparse range data without enforcing strict structural
-            regularities and maintains an adaptive graph. We implement
-            the MW assumption as soft constraints, which we refer to
-            as a soft Manhattan world. We propose novel soft landmark-landmark
-            constraints to incorporate the soft MW into graph
-            SLAM. Through extensive evaluation, we demonstrate that our
-            proposed SoMaSLAM method improves localization accuracy
-            on diverse datasets and is flexible enough to be used in the real
-            world.
+            We propose SoMaSLAM, a 2D graph SLAM designed for tiny robots with sparse range sensing. Our approach effectively maps sparse range data without enforcing strict structural regularities and maintains an adaptive graph. We implement the MW assumption as soft constraints, which we refer to as a soft Manhattan world. We propose novel soft landmark-landmark constraints to incorporate the soft MW into graph SLAM. Through extensive evaluation, we demonstrate that our proposed SoMaSLAM method improves localization accuracy on diverse datasets and is flexible enough to be used in the real world.
           </p>
         </div>
       </div>
@@ -185,7 +175,7 @@
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column">
         <h2 class="title is-3">Supplementary video (with sound)</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/mroBQkx6ew0"
@@ -197,68 +187,46 @@
   </div>
 </section>
 
-
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop content-column">
+    <!-- Short clips section -->
+    <h2 class="title is-3">Short clips</h2>
 
-    <div class="columns is-centered">
-
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Short clips</h2>
-
-        <!-- error accumulation -->
-        <h3 class="title is-4">Error accumulation</h3>
-        <div class="content has-text-justified">
-          <p>
-            SoMaSLAM lessens error accumulation on the poses compared to EG-SLAM, achieving a more accurate graph.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/videos/mit-killian-11pts-short-gif.gif" 
-            alt="mit killian 11pts GIF" 
-            style="width:75%"
-          >
-          <img src="./static/videos/mit-killian-11pts-comparison-groundtruth.png" 
-            alt="mit killian comparison PNG" 
-            style="width:75%"
-          >
-          <p>
-            Comparison between EG-SLAM and SoMaSLAM regarding the C-shaped section.
-          </p>
-        </div>
-        <!--/ error accumulation -->
-
-        <!-- Loop closing -->
-        <h3 class="title is-4">Loop closing</h3>
-        <div class="content has-text-justified">
-          <p>
-            The problem of loop closing is an extension of error accumulation. Too much accumulated error prevents necessary loop closing procedures from happening. 
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/videos/mit-killian-4pts-short2-gif.gif" 
-            alt="mit killian 4pts GIF" 
-            style="width:75%"
-          >
-          <img src="./static/videos/intel-lab-short-gif.gif" 
-            alt="intel lab 4pts GIF" 
-            style="width:75%"
-          >
-        </div>
-        <!--/ Loop closing -->
-
-      </div>
+    <!-- Error accumulation -->
+    <h3 class="title is-4">Error accumulation</h3>
+    <div class="content has-text-justified">
+      <p>
+        SoMaSLAM lessens error accumulation on the poses compared to EG-SLAM, achieving a more accurate graph.
+      </p>
     </div>
-    <!--/ Animation. -->
+    <div class="content has-text-centered">
+      <img src="./static/videos/mit-killian-11pts-short-gif.gif" 
+           alt="mit killian 11pts GIF">
+      <img src="./static/videos/mit-killian-11pts-comparison-groundtruth.png" 
+           alt="mit killian comparison PNG">
+      <p>
+        Comparison between EG-SLAM and SoMaSLAM regarding the C-shaped section.
+      </p>
+    </div>
+
+    <!-- Loop closing -->
+    <h3 class="title is-4">Loop closing</h3>
+    <div class="content has-text-justified">
+      <p>
+        The problem of loop closing is an extension of error accumulation. Too much accumulated error prevents necessary loop closing procedures from happening. 
+      </p>
+    </div>
+    <div class="content has-text-centered">
+      <img src="./static/videos/mit-killian-4pts-short2-gif.gif" 
+           alt="mit killian 4pts GIF">
+      <img src="./static/videos/intel-lab-short-gif.gif" 
+           alt="intel lab 4pts GIF">
+    </div>
   </div>
 </section>
 
-
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
+  <div class="container is-max-desktop content-column">
     <h2 class="title">BibTeX</h2>
     <pre><code>
       <!--citation stuff here -->
@@ -266,18 +234,15 @@
   </div>
 </section>
 
-
 <footer class="footer">
-  <div class="container">
+  <div class="container content-column">
     <div class="content has-text-centered">
     </div>
     <div class="columns is-centered">
-      <div class="column is-8">
+      <div class="column">
         <div class="content">
-          
           <p>
-            Thanks to the authors who built their  <a
-              href="https://nerfies.github.io/">project page</a> for sharing their code. 
+            Thanks to the authors who built their <a href="https://nerfies.github.io/">project page</a> for sharing their code.
           </p>
         </div>
       </div>
