@@ -63,7 +63,7 @@
 
     /* Add spacing between sections */
     .section-spacing {
-      margin-top: 2rem;  /* Add extra space between sections */
+      margin-top: 1rem;  /* Reduced space between sections */
     }
 
     /* Increase spacing between title, names, and links */
@@ -73,6 +73,16 @@
 
     .author-spacing {
       margin-bottom: 1.5rem;  /* Add space after author names */
+    }
+
+    /* Reduce space between the publication links and other buttons */
+    .publication-links {
+      margin-top: 1rem; /* Reduced top margin for buttons */
+    }
+
+    /* Specific margin adjustments for BibTeX section */
+    #BibTeX {
+      margin-top: 1rem; /* Reduce space before BibTeX section */
     }
   </style>
 
@@ -191,8 +201,8 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
+<section class="section section-spacing">
+  <div class="container is-max-desktop content-column">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column">
@@ -226,8 +236,8 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
+<section class="section section-spacing">
+  <div class="container is-max-desktop content-column">
     <!-- Short clips section -->
     <h2 class="title is-3">Short clips</h2>
 
@@ -273,8 +283,8 @@
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
+<footer class="footer section-spacing">
+  <div class="container content-column">
     <div class="content has-text-centered">
     </div>
     <div class="columns is-centered">
